@@ -29,7 +29,17 @@ datasets:
 
 # WebWorld 🌐
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/LICENSE-2.0) [![GitHub](https://img.shields.io/badge/GitHub-WebWorld-4b32c3?logo=github)](https://github.com/QwenLM/WebWorld) [![Dataset](https://img.shields.io/badge/HF%20Dataset-WebWorldData-yellow?logo=huggingface)](https://huggingface.co/datasets/Qwen/WebWorldData) [![8B](https://img.shields.io/badge/Model-8B-green?logo=huggingface)](https://huggingface.co/Qwen/WebWorld-8B) [![14B](https://img.shields.io/badge/Model-14B-green?logo=huggingface)](https://huggingface.co/Qwen/WebWorld-14B) [![32B](https://img.shields.io/badge/Model-32B-green?logo=huggingface)](https://huggingface.co/Qwen/WebWorld-32B)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/LICENSE-2.0) 
+[![GitHub](https://img.shields.io/badge/GitHub-WebWorld-4b32c3?logo=github)](https://github.com/QwenLM/WebWorld) 
+[![Dataset](https://img.shields.io/badge/HF%20Dataset-WebWorldData-yellow?logo=huggingface)](https://huggingface.co/datasets/Qwen/WebWorldData) 
+[![MS Dataset](https://img.shields.io/badge/ModelScope-Dataset-7B42BC)](https://modelscope.cn/datasets/Qwen/WebWorldData) 
+[![8B](https://img.shields.io/badge/Model-8B-green?logo=huggingface)](https://huggingface.co/Qwen/WebWorld-8B) 
+[![MS 8B](https://img.shields.io/badge/ModelScope-8B-7B42BC)](https://modelscope.cn/models/Qwen/WebWorld-8B) 
+[![14B](https://img.shields.io/badge/Model-14B-green?logo=huggingface)](https://huggingface.co/Qwen/WebWorld-14B) 
+[![MS 14B](https://img.shields.io/badge/ModelScope-14B-7B42BC)](https://modelscope.cn/models/Qwen/WebWorld-14B) 
+[![32B](https://img.shields.io/badge/Model-32B-green?logo=huggingface)](https://huggingface.co/Qwen/WebWorld-32B) 
+[![MS 32B](https://img.shields.io/badge/ModelScope-32B-7B42BC)](https://modelscope.cn/models/Qwen/WebWorld-32B)
+
 
 ## 📚 Introduction
 
@@ -44,13 +54,13 @@ Agents trained on WebWorld-synthesized trajectories achieve **+9.9% on MiniWob++
 
 ## 🎯 Model Series
 
-| Model | Base Model | Link |
-|---|---|---|
-| **WebWorld-8B** | [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) | [🤗 HuggingFace](https://huggingface.co/Qwen/WebWorld-8B) |
-| **WebWorld-14B** | [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B) | [🤗 HuggingFace](https://huggingface.co/Qwen/WebWorld-14B) |
-| **WebWorld-32B** | [Qwen3-32B](https://huggingface.co/Qwen/Qwen3-32B) | [🤗 HuggingFace](https://huggingface.co/Qwen/WebWorld-32B) |
+| Model | Base Model | HuggingFace Link | ModelScope Link |
+|---|---|---|---|
+| **WebWorld-8B** | [Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B) | [🤗 HuggingFace](https://huggingface.co/Qwen/WebWorld-8B) | [🤖 ModelScope](https://modelscope.cn/models/Qwen/WebWorld-8B) |
+| **WebWorld-14B** | [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B) | [🤗 HuggingFace](https://huggingface.co/Qwen/WebWorld-14B) | [🤖 ModelScope](https://modelscope.cn/models/Qwen/WebWorld-14B) |
+| **WebWorld-32B** | [Qwen3-32B](https://huggingface.co/Qwen/Qwen3-32B) | [🤗 HuggingFace](https://huggingface.co/Qwen/WebWorld-32B) | [🤖 ModelScope](https://modelscope.cn/models/Qwen/WebWorld-32B) |
 
-**Dataset**: [Qwen/WebWorldData](https://huggingface.co/datasets/Qwen/WebWorldData)
+**WebWorldData**: [Huggingface: Qwen/WebWorldData](https://huggingface.co/datasets/Qwen/WebWorldData), [ModelScope: Qwen/WebWorldData](https://modelscope.cn/datasets/Qwen/WebWorldData)
 
 💡 **Recommendation**: Use 8B for fast simulation and data synthesis; use 14B/32B for higher-fidelity simulation and better long-horizon robustness. For best results in a specific environment, we recommend task-specific fine-tuning on in-domain trajectories.
 
