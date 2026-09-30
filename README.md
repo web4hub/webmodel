@@ -24,7 +24,7 @@ base_model_relation: finetune
 base_model:
 - Qwen/Qwen3-8B
 datasets:
-- Qwen/WebWorldData
+- lmlm/qwen3
 ---
 
 # WebWorld 🌐
