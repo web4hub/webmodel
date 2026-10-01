@@ -22,9 +22,9 @@ tags:
 - instruction-tuning
 base_model_relation: finetune
 base_model:
-- Qwen/Qwen3-8B
+- web4hub/webworld
 datasets:
-- lmlm/qwen3
+- web4hub/voltron
 ---
 
 # WebWorld 🌐
@@ -82,11 +82,11 @@ Agents trained on WebWorld-synthesized trajectories achieve **+9.9% on MiniWob++
 <details>
 <summary>💻 Click to expand code</summary>
 
-```python
+```python3
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM,gemma_lm
 
-model_name = "Qwen/WebWorld-8B"  # or WebWorld-14B, WebWorld-32B
+model_name = "web4hub/voltron"  # or WebWorld-14B, WebWorld-32B ,WebWorld-8B
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
@@ -189,7 +189,7 @@ The first turn provides the initial state and first action. Each subsequent turn
 <details>
 <summary>💻 Click to expand code</summary>
 
-```python
+```python3
 CONTINUE_PROMPT = (
     "Continue the trajectory. Given the previous state, "
     "predict the next page state after this action.\n\n"
@@ -281,14 +281,4 @@ WebWorld-Bench evaluates models using **Factuality Score** (functional correctne
 - **Text-only**: WebWorld does not simulate visual / pixel-level rendering.
 
 ## 📝 Citation
-
-```bibtex
-@misc{xiao2026webworldlargescaleworldmodel,
-      title={WebWorld: A Large-Scale World Model for Web Agent Training}, 
-      author={Zikai Xiao and Jianhong Tu and Chuhang Zou and Yuxin Zuo and Zhi Li and Peng Wang and Bowen Yu and Fei Huang and Junyang Lin and Zuozhu Liu},
-      year={2026},
-      eprint={2602.14721},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2602.14721}, 
-}
+>>
